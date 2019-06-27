@@ -1,1 +1,2 @@
-# Final_task_qa_course
+Финальное задание курса "Автоматизация тестирования с помощью Selenium и Python"
+https://stepik.org/course/575/syllabus

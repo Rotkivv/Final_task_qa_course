@@ -33,7 +33,7 @@ class ProductPage(BasePage):
         assert self.is_element_present(*ProductPageLocators.ALERT_SUCCESS_ADD_TO_BASKET), "No success message added"
     
     def should_be_successful_message_conteins_product_name(self):
-        assert self.get_product_name() == self.get_alert_success_add_to_basket(), "Successful message not conteins product name"
+        assert self.get_product_name() == self.get_alert_success_add_to_basket(), "Successful message not conteins product name "+str(self.browser.current_url)
 
     def should_be_alert_info_message_basket_total(self):
         assert self.is_element_present(*ProductPageLocators.ALERT_INFO_TOTAL_BACKET), "No message info basket total"

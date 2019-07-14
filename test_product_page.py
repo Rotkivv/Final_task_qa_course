@@ -2,8 +2,9 @@ from .pages.product_page import ProductPage
 import time
 
 def test_guest_can_add_product_to_cart(browser):
-    link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
-
+    #link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
+    link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019'
+    
     product_page = ProductPage(browser, link)
     product_page.open()
 
@@ -16,3 +17,4 @@ def test_guest_can_add_product_to_cart(browser):
     product_page.should_be_successful_message_conteins_product_name()
     product_page.should_be_alert_info_message_basket_total()
     product_page.should_be_basket_total_matches_product_price()
+    

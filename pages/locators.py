@@ -21,5 +21,5 @@ class ProductPageLocators(object):
     ALERT_INFO_TOTAL_BACKET = (By.CSS_SELECTOR, '#messages > .alert-info strong')
 
 class BasketPageLocators(object):
-    EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner>p")
+    EMPTY_BASKET_MESSAGE = (By.CSS_SELECTOR, "#content_inner>p")
     BASKET_SUMMARY = (By.CSS_SELECTOR,".basket_summary")

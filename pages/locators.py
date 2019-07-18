@@ -12,6 +12,11 @@ class LoginPageLocators(object):
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form") 
     REGISTRATION_FORM = (By.CSS_SELECTOR, '#register_form')
 
+    REGISTRATION_EMAIL = (By.CSS_SELECTOR, '#id_registration-email')
+    REGISTRATION_PASS1 = (By.CSS_SELECTOR, '#id_registration-password1')
+    REGISTRATION_PASS2 = (By.CSS_SELECTOR, '#id_registration-password2')
+    BTN_REGISTER = (By.CSS_SELECTOR, 'button[name="registration_submit"]')
+
 class ProductPageLocators(object):
     PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main>h1')
     PRODUCT_PRICE = (By.CSS_SELECTOR, '.product_main>.price_color')
